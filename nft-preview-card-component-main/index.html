@@ -14,54 +14,78 @@
     .attribution a { color: hsl(228, 45%, 44%); }
 
     body {
-      background-color: hsl(237, 100%, 4%);
-      margin: auto;
+      background-color: hsl(207, 88%, 6%);
+
     }
 
     main {
       
-      background-color: hsla(237, 13%, 71%, 0.534);
-      width: 1440px;
+      background-color: hsla(237, 35%, 35%, 0.466);
+      box-sizing: border-box;
+      text-align: center;
+      width: 690px;
+      height: 1000px;
       outline-style: auto;
       margin: auto;
-      border: 50px;
-      padding: auto;
-      text-align: center;
+      padding: 10px;
+      
       font-family: 'Times New Roman', Times, serif;
       color: white;
     }
 
-    #logoprincipal {
-       margin: auto;
-       border: solid springgreen;
+    h1 {
+      text-align: left;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
-     
+
+    h2 {
+      text-align: left;
+      font-style: italic;
+    }
+    
+    .quadro_interno {
+       margin: auto;       
+       text-align:left
+       
+    }
+    .icone1 {
+      display: flex;
+      justify-content:left;
+      width: 380px;
+      margin-top: 30px;
+      font-size: 20px;
+    }
+
+    .icone {
+      display: flex;
+      justify-content: space-between;
+      width: 380px;
+      margin-top: 30px;
+      font-size: 20px;
+    }
   </style>
 
 </head>
 <body>
   
-    <main>
+    <main class="quadro interno">
       <figure>
-        <img id="logoprincipal" src="images/image-equilibrium.jpg" alt="LogoEquilibrium" >
-        
+        <img src="images/image-equilibrium.jpg" alt="LogoEquilibrium" >
+      
         <section>
-          Equilibrium #3429
+          <h1>Equilibrium #3429</h1>
         </section>
         <section>
-          Our Equilibrium collection promotes balance and calm.
+          <h2>Our Equilibrium collection promotes balance and calm.</h2>
         </section>
-        <section>
-          0.041 ETH
+        <section class="icone">
+          <span><i><img src="images/icon-ethereum.svg" alt="icon-ethereum">  0.041 ETH  </img></i></span>
+          <span><i><img src="images/icon-clock.svg" alt="icon-clock">  3 days left  </img></i></span> 
         </section>
-        <section>
-          3 days left
-        </section>
-        <section>
+        <footer>
           Creation of Jules Wyvern
-        </section>
+        </footer>
       </figure>
-
     </main>
 
     <div class="attribution">
