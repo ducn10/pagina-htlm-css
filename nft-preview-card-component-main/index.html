@@ -5,84 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&    family=Outfit:wght@400;500;700&display=swap" rel="stylesheet">
   
   <title>Componente do cartão de visualização NFT</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-
-    body {
-      background-color: hsl(207, 88%, 6%);
-
-    }
-
-    main {
-      
-      background-color: hsla(237, 35%, 35%, 0.466);
-      box-sizing: border-box;
-      text-align: center;
-      width: 690px;
-      height: 1000px;
-      outline-style: auto;
-      margin: auto;
-      padding: 10px;
-      font-family: 'Times New Roman', Times, serif;
-      color: white;
-    }
-
-    h1 {
-      text-align: left;
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-
-    h2 {
-      text-align: left;
-      font-style: italic;
-    }
-    
-    .quadro_interno {
-       margin: auto;       
-       text-align:left  
-    }
-
-    .icone {
-      display: flex;
-      justify-content: space-between;
-      width: 380px;
-      margin-top: 30px;
-      font-size: 20px;
-    }
-  </style>
+ 
 
 </head>
 <body>
   
-    <main class="quadro interno">
-      <figure>
-        <img src="images/image-equilibrium.jpg" alt="LogoEquilibrium" >
-      
-        <section>
-          <h1>Equilibrium #3429</h1>
-        </section>
-        <section>
-          <h2>Our Equilibrium collection promotes balance and calm.</h2>
-        </section>
-        <section class="icone">
-          <span><i><img src="images/icon-ethereum.svg" alt="icon-ethereum">  0.041 ETH  </img></i></span>
-          <span><i><img src="images/icon-clock.svg" alt="icon-clock">  3 days left  </img></i></span> 
-        </section>
-        <footer>
-          Creation of Jules Wyvern
+    <main>
+      <img class="imagem" src="assets/images/image-equilibrium.jpg" alt="LogoEquilibrium" >
+
+      <header>
+        <h1>Equilibrium #3429</h1>
+        <p>Our Equilibrium collection promotes balance and calm.</p>
+        <div class="wrapper">
+          <div>
+            <img src="assets/images/icon-view.svg" alt="viewport">
+            <span>0.041 ETH</span>
+          </div>
+          <div>
+            <img src="assets/images/icon-clock.svg" alt="icon-clock">
+            <span>3 days left</span>
+          </div>
+        </div>
+        <div class="divison">
+
+        </div>
+        <footer class="footer">
+          <i><img src="images/image-avatar2.png" alt="Foto">   Creation of Jules Wyvern  </img></i>
         </footer>
-      </figure>
+      </header>
     </main>
 
-    <div class="attribution">
+    <!-- <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
-    </div>
+    </div> -->
 
 </body>
 </html>
