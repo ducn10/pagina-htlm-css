@@ -1,6 +1,3 @@
-.attribution { font-size: 11px; text-align: center; margin-top: 5px; }
-.attribution a { color: hsl(228, 45%, 44%); }
-
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +6,7 @@
 
 body {
   background-color: rgba(13,26,45,255);
-  height: 100%;
+  height: 100vh;
   width: 100%;
   display:grid;
   place-content: center;
@@ -25,7 +22,7 @@ main {
   padding: 20px;
   color: white;
   border-radius: 20px;
-  box-shadow: 10px 5px 5px rgba(0, 0, 14, 0.514);
+  box-shadow: -1px 2px 20px 3px #000000;
 }
 
 .imagem {
@@ -45,7 +42,7 @@ header h1 {
   font-size: 22px;
 }
 
-header p {
+header h3 {
   margin-top: 15px;
   font-size: 16px;
   text-align: justify;
@@ -58,16 +55,21 @@ header p {
   justify-content: space-between;
   width: 100%;
   margin-top: 15px;
+  
 }
 
-
-.wrapper div img {
+.wrapper img {
   width: 15px;
   height: 15px;
 }
 
-.wrapper div span {
+.wrapper .view {
   color: hsl(178, 100%, 50%);
+  
+}
+
+.wrapper .clock {
+  color: rgba(255, 255, 255, 0.371);
   
 }
 
@@ -76,25 +78,46 @@ header p {
   height: 2px;
   background: rgba(255, 255, 255, 0.094);
   margin-top: 15px;
+  margin-bottom: 20px;
 }
 
-
-.footer {
+footer {
   display: flex;
-  height: 20px;
-  width: 100%px;
-  margin-top: 25px;
-  font-size: 18px;  
+  flex: 1;
+  justify-content:left;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
 }
 
-.footer div img {
+footer img {
   height: 30px;
   justify-content:left;
   border: 1px solid white;
   border-radius: 50px;
 }
 
-.footer div span {
-    text-align:justify;
-    font-size: 18px;
+footer p {
+    text-align: center;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.371);
+    
 }
+
+footer p span {
+  color: white;
+}
+
+.attribution {
+  display: flex;
+  flex-direction: column;
+  font-size: 11px; 
+  text-align: center; 
+  margin-top: 15px;
+  color: white; 
+}
+.attribution a {
+   color: hsl(228, 45%, 44%);
+   text-decoration: none;
+   margin-left: 3px;
+  }
